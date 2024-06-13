@@ -15,11 +15,10 @@ public class CoinController : MonoBehaviour
         //Destruye la moneda
         Destroy(gameObject);
 
+        GameObject scripter = GameObject.Find("Scripter");
 
+        scripter.GetComponent<ScoreManager>().RaiseScore(1);
     }
-
-
-
 
 
 }
